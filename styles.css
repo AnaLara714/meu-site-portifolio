@@ -22,8 +22,9 @@ header {
   align-items: center;
   background: #e0b2ff;
   border-radius: 16px;
-  max-width: 1042px;
-  max-height: 76px;
+  width: 1042px;
+  height: 76px;
+  column-gap: 532px;
 }
 
 #logo {
