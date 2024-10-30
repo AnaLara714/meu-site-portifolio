@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #e0b2ff;
+  border-radius: 16px;
+  max-width: 1042px;
+  max-height: 76px;
+}
+
+#logo {
+  font-size: 28px;
+  height: 29;
+  width: 81;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  column-gap: 18px;
+  font-size: 16px;
+}
