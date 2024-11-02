@@ -18,7 +18,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background: #e0b2ff;
   border-radius: 16px;
@@ -51,11 +51,62 @@ header nav ul li:hover {
   text-decoration-color: #ffffff;
 }
 
-@media (max-width: 1024px) {
+.name {
+  font-family: var(--font-primary);
+  font-size: 34px;
+}
+
+.position,
+.profissional-experience {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+}
+
+.button-link {
+  width: 224px;
+  height: 48px;
+  font-family: var(--font-primary);
+  background-color: #e0b2ff;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button-link:active {
+  background-color: #c97ffa;
+}
+
+#animation-img {
+  background-color: #808080;
+  border: none;
+  border-radius: 50%;
+  width: 303px;
+  height: 289px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 955px;
+  margin-top: 10%;
+}
+
+@media (max-width: 768px) {
   header {
     width: 70%;
     padding: 5px;
     height: auto;
+    margin-top: 20px;
   }
 
   header nav ul {
@@ -64,5 +115,52 @@ header nav ul li:hover {
     padding: 0;
     margin-top: 0;
     font-size: 14px;
+  }
+
+  .presentation-items {
+    width: 75%;
+    margin-top: 45px;
+  }
+
+  .position,
+  .name,
+  .profissional-experience,
+  .button-link {
+    text-align: center;
+  }
+
+  #animation-img {
+    width: 180px;
+    height: 170px;
+    align-content: center;
+    margin-top: 5%;
+  }
+
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1040px) {
+  header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 18px;
+  }
+
+  #welcome-section {
+    display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    align-items: center;
+    width: 80%;
   }
 }
