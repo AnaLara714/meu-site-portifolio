@@ -90,6 +90,8 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #welcome-section {
@@ -99,6 +101,21 @@ main {
   align-items: center;
   width: 955px;
   margin-top: 10%;
+}
+
+.title-section {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 100px;
+}
+
+.line-subtitle {
+  background-color: #e0b2ff;
+  height: 3px;
+  width: 79px;
+  border: none;
+  margin-top: 18px;
 }
 
 @media (max-width: 768px) {
